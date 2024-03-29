@@ -13,7 +13,7 @@ function ScrollVisible(scrollY) {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [window.scrollY]);
 
     return isVisible;
 }

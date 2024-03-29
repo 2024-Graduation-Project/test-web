@@ -7,7 +7,7 @@ function ContentSection2() {
     "9.505049092695117e-05",
     "0.0001239777193404734",
     "\\uc548\\ub155\\ud558\\uc138\\uc694"
-]`
+]`;
 
     return (
         <div className='content-section'>

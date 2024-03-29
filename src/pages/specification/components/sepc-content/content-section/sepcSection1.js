@@ -1,9 +1,8 @@
-function SepcSection1() {
+function SepcSection2() {
     return (
-      <div className='spec-section'>
-
-      </div>
+        <div className='content-section'>
+        </div>
     );
 }
 
-export default SepcSection1;
+export default SepcSection2;

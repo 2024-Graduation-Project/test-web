@@ -1,24 +1,7 @@
-import { useState, useEffect } from "react";
+import scrollVisible from "../../../../custom-hook/introduce/scrollVisible";
 
-function Reason() {
-    const [isVisible, setIsVisible] = useState(false);
-    const reasonsText = [
-        "API For Personal Servers For Game Operators",
-        "Preventing Slang From Being Exposed To Users",
-        "Reduce Operational Costs To Improve User Experience"
-    ];
-
-    function handleScroll() {
-        if(window.scrollY > 200) setIsVisible(true);
-    }
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, [])
+function Reason({ reasonsText }) {
+    const isVisible = scrollVisible(200);
 
     return (
         <div className='reason-container'>
