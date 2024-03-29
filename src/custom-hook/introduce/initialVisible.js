@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function UseVisible() {
+function InitialVisible() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -10,4 +10,4 @@ function UseVisible() {
     return isVisible;
 }
 
-export default UseVisible;
+export default InitialVisible;
