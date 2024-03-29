@@ -1,15 +1,32 @@
+import { useState, useEffect } from "react";
+
 function Reason() {
+    const [isVisible, setIsVisible] = useState(false);
+    const reasonsText = [
+        "API For Personal Servers For Game Operators",
+        "Preventing Slang From Being Exposed To Users",
+        "Reduce Operational Costs To Improve User Experience"
+    ];
+
+    function handleScroll() {
+        if(window.scrollY > 200) setIsVisible(true);
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [])
+
     return (
         <div className='reason-container'>
-            <div className='reason-text'>
-                <p>Pioneering research on the path to AGI</p>
-            </div>
-            <div className='reason-text'>
-                <p>Transforming work and creativity with AI</p>
-            </div>
-            <div className='reason-text'>
-                <p>Join us in shaping the future of technology</p>
-            </div>
+            {reasonsText.map((reasons, index) => (
+                <div key={reasons} className={`reason-text ${isVisible ? 'visible' : ''}`}>
+                    {reasons}
+                </div>
+            ))}
         </div>
     );
 }

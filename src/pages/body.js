@@ -1,13 +1,13 @@
 import IntroduceContent from './introduce/introduceContent';
-import TestContent from './test/testContent';
+import TestContent from "./test/testContent";
 import ManualContent from './manual/manualContent';
 import SpecificationContent from './specification/specificationContent';
 
 const contents = 
 [
-    <IntroduceContent />, 
+    <IntroduceContent />,
     <TestContent />,
-    <ManualContent />, 
+    <ManualContent />,
     <SpecificationContent />
 ];
 

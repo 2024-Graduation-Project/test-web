@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Menu from './menu';
 import Body from './body';
-import Test from './test';
+import TopButton from "./topButton";
 
 import '../index.css';
 
@@ -10,14 +10,15 @@ function Main() {
     const [selectedContent, setSelectedContent] = useState(0);
 
     function handleContentChange(content) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         setSelectedContent(content);
     }
 
     return (
-        <div>
+        <div className='container'>
             <Menu selectContent={handleContentChange} />
-            <Body contentCode={selectedContent} />        
-            {/* <Test /> */}
+            <Body contentCode={selectedContent} />
+            <TopButton />
         </div>
     )
 }

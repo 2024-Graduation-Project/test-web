@@ -1,4 +1,4 @@
-function Section2() {
+function ContentSection2() {
     const requestFormat = `{ "text": "message" }`;
     const responseFormat =
 `[
@@ -12,13 +12,15 @@ function Section2() {
     return (
         <div className='content-section'>
             <p className='title1'>Request/Response Format</p>
-            <p className='text'>요청을 보낼 때, 다음의 형식을 갖추어 JSON으로 보낸다.</p>
+            <p className='text'>
+                요청을 보낼 때, 다음의 형식을 지켜서 JSON으로 보낸다.
+            </p>
             <div className='code-section'>
                 <code className='code-font'><span>{requestFormat}</span></code>
             </div>
             <p className='text'>
-                응답은 JSON이 아닌 문자열의 형식으로 온다.
-                [0]~[3]은 Request Message가 각 라벨에 속해있을 확률이다.
+                응답은 JSON이 아닌 배열 형식으로 온다.
+                [0]~[3]은 Request Message가 각 클래스에 속할 확률이다.
                 [4]는 욕설이 필터링된 문장이며, 유니코드 형식임을 유의한다.
             </p>
             <div className='long-code-section'>
@@ -28,4 +30,4 @@ function Section2() {
     );
 }
 
-export default Section2;
+export default ContentSection2;

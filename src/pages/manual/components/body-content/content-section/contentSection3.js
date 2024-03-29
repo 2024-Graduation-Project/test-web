@@ -1,4 +1,4 @@
-function Section3() {
+function ContentSection3() {
     const exampleURL = `const torchServeURL = "http://localhost:0000/predictions/KcELECTRA;
 const requestMessage = "안녕하세요";`;
     const axiosRequestCode = `axios.post(torchServeURL, requestMessage)
@@ -45,4 +45,4 @@ const requestMessage = "안녕하세요";`;
     );
 }
 
-export default Section3;
+export default ContentSection3;

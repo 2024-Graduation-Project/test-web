@@ -3,21 +3,13 @@ import axios from "axios";
 
 function TestInput({ setResultText }) {
     const [inputText, setInputText] = useState("");
-    const torchServeURL = "http://localhost:8080/predictions/KcELECTRA";
-
-    // 응답 메시지 형식
-    const testResponseMessage = [
-        "0.9997372031211853",
-        "4.3749314500018954e-05",
-        "9.505049092695117e-05",
-        "0.0001239777193404734",
-        "\uc548\ub155\ud558\uc138\uc694"
-    ]
+    const torchServeURL = "http://192.168.179.148:8080/predictions/KcELECTRA";
 
     function preprocess(rawResult) {
         const probToNum = rawResult.slice(0, 4).map(Number);
         const resultLevel = probToNum.indexOf(Math.max(...probToNum));
         const resultStr = [ probToNum[0], probToNum[1], probToNum[2], probToNum[3], resultLevel, rawResult[4] ]
+
         return resultStr;
     }
     function handleSubmit(event) {
@@ -25,12 +17,18 @@ function TestInput({ setResultText }) {
         if(!inputText.trim()) return;
 
         // 테스트
+        const testResponseMessage = [
+            "0.9997372031211853",
+            "4.3749314500018954e-05",
+            "9.505049092695117e-05",
+            "0.0001239777193404734",
+            "\uc548\ub155\ud558\uc138\uc694"
+        ]
+
         console.log("응답 메시지:", testResponseMessage);
         setResultText(preprocess(testResponseMessage));
 
-        // // 서버로 보낼 때
-        // const message = { text: inputText }
-        //
+        // const message = { "text": inputText }
         // axios.post(torchServeURL, message)
         //     .then((response) => {
         //         console.log("전송 성공:", response.data);
@@ -39,8 +37,8 @@ function TestInput({ setResultText }) {
         //     .catch((error) => {
         //         console.log("전송 실패:", error);
         //     })
-
-        setInputText("");
+        //
+        // setInputText("");
     };
 
     return (

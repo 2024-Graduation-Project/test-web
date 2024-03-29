@@ -1,12 +1,7 @@
-function Section1() {
+function ContentSection1() {
     const exampleAxiosCode = `axios.post(url, request)
-            .then((response) => {
-                console.log("전송 성공:", response.data);
-                setResultText(preprocess(response.data));
-            })
-            .catch((error) => {
-                console.log("전송 실패:", error);
-            })`;
+            .then((response) => { console.log("전송 성공:", response.data); })
+            .catch((error) => { console.log("전송 실패:", error); })`;
 
     return (
         <div className='content-section'>
@@ -14,7 +9,7 @@ function Section1() {
             <p className='text'>
                 미리 학습한 모델을 TorchServe로 배포하였기 때문에,
                 HTTP 요청 및 응답이 가능한 모든 언어와 상호작용 가능하다.
-                매뉴얼은 React.js, Axios로 작성되었다.
+                매뉴얼은 React.js, Axios를 사용하여 작성하였다.
             </p>
             <p className='text'>
                 axios 설치 코드 :
@@ -32,4 +27,4 @@ function Section1() {
     );
 }
 
-export default Section1;
+export default ContentSection1;

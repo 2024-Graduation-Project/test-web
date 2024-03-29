@@ -1,7 +1,13 @@
+import ManualBody from "./components/manualBody.js";
+
 function ManualContent() {
     return(
-        <div>
-            <p>manual content</p>
+        <div className='manual-container'>
+            <div className='manual-image-container'>
+                {/* 이곳에 이미지 선언 */}
+            </div>
+            <div className='manual-text-container'><p>How To Start?</p></div>
+            <ManualBody />
         </div>
     )
 }
