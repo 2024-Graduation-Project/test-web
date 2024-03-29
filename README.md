@@ -2,7 +2,7 @@
 
 ### `npm start`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+node_modules 파일 다운로드
 
 ## Available Scripts
 
