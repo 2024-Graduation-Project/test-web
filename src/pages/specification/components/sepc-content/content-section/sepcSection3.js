@@ -22,7 +22,7 @@ function SepcSection3() {
                     <tr><td>0</td><td>String</td><td>Yes</td><td>first class</td></tr>
                     <tr><td>1</td><td>String</td><td>Yes</td><td>second class</td></tr>
                     <tr><td>2</td><td>String</td><td>Yes</td><td>third class</td></tr>
-                    <tr><td>3</td><td>String</td><td>Yes</td><td>forth class</td></tr>
+                    <tr><td>3</td><td>String</td><td>Yes</td><td>fourth class</td></tr>
                     <tr><td>4</td><td>String</td><td>Yes</td><td>masked message</td></tr>
                 </table>
             </div>

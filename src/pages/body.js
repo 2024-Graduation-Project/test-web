@@ -13,7 +13,9 @@ const contents =
 
 function Body({ contentCode }) {
     return (
-        contents.map((content, index) => contentCode === index && <div key={index}>{content}</div>)        
+        <div className='body-container'>
+            {contents.map((content, index) => contentCode === index && <div key={index}>{content}</div>)}
+        </div>
     );
 }
 

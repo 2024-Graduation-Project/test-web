@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 
 import Reason from './conponents/reason/reason.js';
 import Function from "./conponents/function/function";

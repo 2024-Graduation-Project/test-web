@@ -13,7 +13,7 @@ body {
   background-color: #131313;
   color: white;
   margin: 0%;
-  height: 1000px;
+  height: 2000px;
 }
 
 p {
@@ -76,10 +76,12 @@ td + td {
 .container {
   height: 5000px;
 }
-
+.body-container {
+  height: 100%;
+}
 .main-header {
   width: 100%;
-  height: 80px ;
+  height: 80px;
   box-sizing: border-box;
   padding-left: 55px;
   position: sticky;
@@ -189,6 +191,7 @@ td + td {
 }
 
 .etc-container {
+  position: relative;
   display: flex;
   padding: 0px 10px 20px 35px;
   border-top: 1px solid white;
