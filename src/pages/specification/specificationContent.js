@@ -1,6 +1,7 @@
 import initialVisible from "../../custom-hook/introduce/initialVisible";
 import SideBlock from "./components/side-block/sideBlock";
 import SpecBody from "./components/specBody";
+import EtcContent from "../introduce/conponents/etc/etcContent";
 
 function SpecificationContent() {
     const isVisible = initialVisible();

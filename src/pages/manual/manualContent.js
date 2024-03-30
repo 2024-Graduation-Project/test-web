@@ -1,5 +1,6 @@
 import ManualBody from "./components/manualBody.js";
 import initialVisible from "../../custom-hook/introduce/initialVisible";
+import EtcContent from "../introduce/conponents/etc/etcContent";
 
 function ManualContent() {
     const isVisible = initialVisible();

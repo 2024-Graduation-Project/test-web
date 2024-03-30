@@ -25,23 +25,15 @@ function SepcSection2() {
             <p className='title2'>Request Header</p>
             <div className='table-section'>
                 <table>
-                    <tr>
-                        <th>parameter</th><th>type</th><th>essential</th><th>etc</th>
-                    </tr>
-                    <tr>
-                        <td>Content-Type</td><td>String</td><td>Yes</td><td>application/json</td>
-                    </tr>
+                    <tr><th>parameter</th><th>type</th><th>essential</th><th>etc</th></tr>
+                    <tr><td>Content-Type</td><td>String</td><td>Yes</td><td>application/json</td></tr>
                 </table>
             </div>
             <p className='title2'>Request Elements</p>
             <div className='table-section'>
                 <table>
-                    <tr>
-                        <th>parameter</th><th>type</th><th>essential</th><th>etc</th>
-                    </tr>
-                    <tr>
-                        <td>text</td><td>String</td><td>Yes</td><td>message</td>
-                    </tr>
+                    <tr><th>parameter</th><th>type</th><th>essential</th><th>etc</th></tr>
+                    <tr><td>text</td><td>String</td><td>Yes</td><td>message</td></tr>
                 </table>
             </div>
         </div>

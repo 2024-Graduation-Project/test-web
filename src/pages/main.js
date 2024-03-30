@@ -5,6 +5,7 @@ import Body from './body';
 import TopButton from "./topButton";
 
 import '../index.css';
+import EtcContent from "./introduce/conponents/etc/etcContent";
 
 function Main() {
     const [selectedContent, setSelectedContent] = useState(0);
