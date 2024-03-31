@@ -3,6 +3,6 @@ function SepcSection2() {
         <div className='content-section'>
         </div>
     );
-}
+};
 
 export default SepcSection2;

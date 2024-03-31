@@ -5,6 +5,7 @@ function SepcSection2() {
       \t"text": "메시지 내용", \\
       }'`;
     const serverURL = `https://{SERVER_URL}/predictions/KcELECTRA`;
+
     return (
         <div className='content-section'>
             <p className='title1'>Request</p>
@@ -14,12 +15,8 @@ function SepcSection2() {
             </div>
             <div className='table-section'>
                 <table>
-                    <tr>
-                        <th>method</th><th>request URL</th>
-                    </tr>
-                    <tr>
-                        <td>POST</td><td>{serverURL}</td>
-                    </tr>
+                    <tr><th>method</th><th>request URL</th></tr>
+                    <tr><td>POST</td><td>{serverURL}</td></tr>
                 </table>
             </div>
             <p className='title2'>Request Header</p>
