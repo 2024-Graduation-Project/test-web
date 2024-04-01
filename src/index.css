@@ -66,6 +66,9 @@ th + th,
 td + td {
   border-left: 1px solid #505050;
 }
+.invisible {
+  visibility: hidden;
+}
 
 .text {
   margin-bottom: 25px;
@@ -191,13 +194,62 @@ td + td {
 }
 
 .function-container {
-  height: 500px;
+  height: 1000px;
   margin: 0px 20px;
   padding: 10px;
   border-top: 1px solid white;
 }
 .function-title {
   font-size: 40px;
+}
+.func-section1 {
+  display: flex;
+  padding: 100px 0px;
+  /*border: 1px solid white;*/
+}
+.sect1-explain-container {
+  width: 500px;
+  padding-right: 100px;
+  border-right: 1px solid white;
+}
+.sect1-test-container {
+  padding: 25px 100px;
+}
+.test-input-container,
+.test-output-container {
+  width: 600px;
+  height: 200px;
+  padding: 0px 20px;
+  border: 1px solid white;
+}
+.test-input,
+.test-output {
+  color: #cccccc;
+  /*border: 1px solid white;*/
+}
+
+.text-animation-input {
+  width: 120px;
+  filter: blur(2px);
+  animation: typing .9s steps(20), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+}
+.text-animation-output {
+  width: 120px;
+  animation: typing .9s steps(20), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+}
+@keyframes typing {
+  from { width: 0 }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .etc-container {
@@ -373,6 +425,11 @@ a.side-nav-item.view {
 .title2 {
   font-size: 20px;
   font-weight: 550;
+  letter-spacing: 1px;
+}
+.title3 {
+  font-size: 18px;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 .content-section {
