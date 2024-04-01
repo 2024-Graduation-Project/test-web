@@ -1,9 +1,6 @@
-function SepcSection2() {
-    const requestSyntax = `curl -X POST https://{SERVER_URL}/predictions/KcELECTRA \\
-  -H "Content-Type: application/json" \\
-  -d '{"text": "메시지 내용"}'`;
-    const serverURL = `https://{SERVER_URL}/predictions/KcELECTRA`;
+import { requestSyntax, serverURL } from '../../../specificationText';
 
+function SepcSection2() {
     return (
         <div className='content-section'>
             <p className='title1'>Request</p>

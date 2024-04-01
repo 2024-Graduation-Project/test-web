@@ -1,5 +1,5 @@
-import Sect1Explain from "./sect1Explain";
-import Sect1Test from "./sect1Test";
+import Sect1Explain from "./test-section/sect1Explain";
+import Sect1Test from "./test-section/sect1Test";
 
 function FuncSection1() {
     return (

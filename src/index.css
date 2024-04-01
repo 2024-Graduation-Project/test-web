@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 @font-face {
-  font-family: "D2Coding";
-  src: url("font/D2Coding.ttf");
+  font-family: "Nanum Gothic Coding KR";
+  font-style: normal;
+  unicode-range: U+AC00-D7A3;
+  src: url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
 }
 
 html {
@@ -67,7 +69,7 @@ td + td {
   border-left: 1px solid #505050;
 }
 .invisible {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .text {
@@ -195,7 +197,7 @@ td + td {
 
 .function-container {
   height: 1000px;
-  margin: 0px 20px;
+  margin: 0px 40px;
   padding: 10px;
   border-top: 1px solid white;
 }
@@ -210,35 +212,37 @@ td + td {
 .sect1-explain-container {
   width: 500px;
   padding-right: 100px;
-  border-right: 1px solid white;
 }
 .sect1-test-container {
-  padding: 25px 100px;
+  color: #cccccc;
+  padding-left: 200px;
 }
 .test-input-container,
 .test-output-container {
+  font-family: "Nanum Gothic Coding KR";
   width: 600px;
-  height: 200px;
+  height: 160px;
   padding: 0px 20px;
-  border: 1px solid white;
+  border: 1px dotted #cccccc;
+  /*border-style: dot-dash;*/
 }
 .test-input,
 .test-output {
   color: #cccccc;
-  /*border: 1px solid white;*/
+  padding: 0px 0px;
 }
+.text-input-lv0,
+.text-input-lv1{
 
-.text-animation-input {
-  width: 120px;
-  filter: blur(2px);
-  animation: typing .9s steps(20), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid white;
+}
+.text-input-lv2,
+.text-input-lv3,
+.text-input-lv4 {
+  filter: blur(1px);
 }
 .text-animation-output {
   width: 120px;
-  animation: typing .9s steps(20), blink .5s step-end infinite alternate;
+  animation: typing 1.5s steps(20), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid white;
@@ -428,8 +432,9 @@ a.side-nav-item.view {
   letter-spacing: 1px;
 }
 .title3 {
+  font-family: "Reddit Mono";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 .content-section {
