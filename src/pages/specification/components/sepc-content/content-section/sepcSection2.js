@@ -1,9 +1,7 @@
 function SepcSection2() {
     const requestSyntax = `curl -X POST https://{SERVER_URL}/predictions/KcELECTRA \\
   -H "Content-Type: application/json" \\
-  -d '{ \\
-      \t"text": "메시지 내용", \\
-      }'`;
+  -d '{"text": "메시지 내용"}'`;
     const serverURL = `https://{SERVER_URL}/predictions/KcELECTRA`;
 
     return (

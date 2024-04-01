@@ -6,8 +6,8 @@ function Reason({ reasonsText }) {
     return (
         <div className='reason-container'>
             {reasonsText.map((reasons, index) => (
-                <div key={reasons} className={`reason-text ${isVisible ? 'visible' : ''}`}>
-                    {reasons}
+                <div key={reasons} className={`reason-text ${isVisible ? `visible${reasons.visible}` : ''}`}>
+                    {reasons.content}
                 </div>
             ))}
         </div>

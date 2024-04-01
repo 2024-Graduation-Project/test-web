@@ -8,9 +8,9 @@ import EtcContent from "./conponents/etc/etcContent";
 function IntroduceContent() {
     const isVisible = useVisible();
     const reasonsText = [
-        "API for personal servers for game operators",
-        "Preventing slang from being exposed to users",
-        "Reduce operational costs to improve user experience"
+        { content: "API for personal servers for game operators", visible: 1 },
+        { content: "Preventing slang from being exposed to users", visible: 2 },
+        { content: "Reduce operational costs to improve user experience", visible: 3 },
     ];
 
     return(

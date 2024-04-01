@@ -175,9 +175,19 @@ td + td {
   opacity: 0;
   transition: opacity .5s ease, padding-top .5s ease;
 }
-.reason-text.visible {
+.reason-text.visible1 {
   padding-top: 20px;
   opacity: 1;
+}
+.reason-text.visible2 {
+  padding-top: 20px;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+.reason-text.visible3 {
+  padding-top: 20px;
+  opacity: 1;
+  transition-delay: 0.4s;
 }
 
 .function-container {
