@@ -59,6 +59,7 @@ th + th,
 td + td {
   border-left: 1px solid #505050;
 }
+
 .invisible {
   opacity: 0;
 }
@@ -73,7 +74,7 @@ td + td {
   height: 5000px;
 }
 .body-container {
-  height: 100%;
+  height: auto;
 }
 .main-header {
   width: 100%;
