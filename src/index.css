@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
-@font-face {
-  font-family: "Nanum Gothic Coding KR";
-  font-style: normal;
-  unicode-range: U+AC00-D7A3;
-  src: url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
-}
-
 html {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -219,7 +210,7 @@ td + td {
 }
 .test-input-container,
 .test-output-container {
-  font-family: "Nanum Gothic Coding KR";
+  font-family: "Nanum Gothic Coding";
   width: 600px;
   height: 160px;
   padding: 0px 20px;
