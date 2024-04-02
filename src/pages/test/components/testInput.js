@@ -3,7 +3,7 @@ import axios from "axios";
 
 function TestInput({ setResultText }) {
     const [inputText, setInputText] = useState("");
-    const torchServeURL = "/torch";
+    const serverURL = "http://localhost:3030/torch";
 
     function preprocess(rawResult) {
         const probToNum = rawResult.slice(0, 4).map(Number);
@@ -29,7 +29,7 @@ function TestInput({ setResultText }) {
         // setResultText(preprocess(testResponseMessage));
 
         const message = { "text": inputText }
-        axios.post(torchServeURL, message)
+        axios.post(serverURL, message)
             .then((response) => {
                 console.log("전송 성공:", response.data);
                 setResultText(preprocess(response.data));
