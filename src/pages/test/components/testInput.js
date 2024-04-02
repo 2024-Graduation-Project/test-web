@@ -3,7 +3,7 @@ import axios from "axios";
 
 function TestInput({ setResultText }) {
     const [inputText, setInputText] = useState("");
-    const torchServeURL = "/torch/predictions/KcELECTRA";
+    const torchServeURL = "http://localhost:8080/predictions/KcELECTRA";
 
     function preprocess(rawResult) {
         const probToNum = rawResult.slice(0, 4).map(Number);
