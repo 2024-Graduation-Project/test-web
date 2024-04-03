@@ -202,21 +202,32 @@ td + td {
   /*border: 1px solid white;*/
 }
 .sect1-explain-container {
+  display: flex;
   width: 500px;
-  padding-right: 100px;
+  padding-right: 120px;
+  align-items: center;
+  border-right: 1px solid white;
+}
+.explain-text {
+  font-size: 30px;
 }
 .sect1-test-container {
   color: #cccccc;
   padding-left: 200px;
 }
-.test-input-container,
+.test-input-container {
+  font-family: "Nanum Gothic Coding";
+  width: 600px;
+  height: 160px;
+  padding: 0px 20px;
+  /*border-top: 1px dotted #cccccc;*/
+}
 .test-output-container {
   font-family: "Nanum Gothic Coding";
   width: 600px;
   height: 160px;
   padding: 0px 20px;
-  border: 1px dotted #cccccc;
-  /*border-style: dot-dash;*/
+  /*border-top: 1px dotted #cccccc;*/
 }
 .test-input,
 .test-output {
@@ -233,7 +244,7 @@ td + td {
   filter: blur(1px);
 }
 .text-animation-output {
-  width: 120px;
+  width: 200px;
   animation: typing 1.5s steps(20), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;

@@ -1,4 +1,4 @@
-import { ioTexts } from "../../functionText";
+import { ioText } from "../../../../introduceText";
 import scrollVisible from "../../../../../../custom-hook/introduce/scrollVisible";
 
 function Sect1Test() {
@@ -9,13 +9,13 @@ function Sect1Test() {
             <div className='test-input-container'>
                 <p className='title3'>Input</p>
                 <div className='test-input'>
-                    <div className='text-input-lv4'><p>{ioTexts.inputTextLv4}</p></div>
+                    <div className='text-input-lv4'><p>{ioText.inputTextLv4}</p></div>
                 </div>
             </div>
             <div className='test-output-container'>
                 <p className='title3'>Output</p>
                 <div className='test-output'>
-                    <div className={`${isVisible ? 'text-animation-output' : 'invisible'}`}>{ioTexts.outputTextLv4}</div>
+                    <div className={`${isVisible ? 'text-animation-output' : 'invisible'}`}>{ioText.outputTextLv4}</div>
                 </div>
             </div>
         </div>

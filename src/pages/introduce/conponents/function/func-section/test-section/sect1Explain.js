@@ -1,7 +1,7 @@
 function Sect1Explain() {
     return (
         <div className='sect1-explain-container'>
-            Section1 Text
+            <div className='explain-text'>Filtering and Slang Classification by severity</div>
         </div>
     );
 }

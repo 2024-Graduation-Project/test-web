@@ -1,5 +1,3 @@
-import currentViewMenu from "../../../../../custom-hook/manual/currentViewMenu";
-
 function NavSection1({ sect1Links }) {
 
     return (
