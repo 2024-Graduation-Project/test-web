@@ -42,8 +42,8 @@ function TestInput({ setResultText }) {
     };
 
     return (
-        <div className='test-box-container'>
-            <form className='test-box-form' onSubmit={handleSubmit}>
+        <div className='test-input-container'>
+            <form className='test-input-form' onSubmit={handleSubmit}>
                 <input
                     type="text"
                     placeholder="please input sentence."

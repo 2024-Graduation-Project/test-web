@@ -216,22 +216,22 @@ td + td {
   color: #cccccc;
   padding-left: 200px;
 }
-.test-input-container {
+.func-input-container {
   font-family: "Nanum Gothic Coding";
   width: 600px;
   height: 160px;
   padding: 0px 20px;
   /*border-top: 1px dotted #cccccc;*/
 }
-.test-output-container {
+.func-output-container {
   font-family: "Nanum Gothic Coding";
   width: 600px;
   height: 160px;
   padding: 0px 20px;
   /*border-top: 1px dotted #cccccc;*/
 }
-.test-input,
-.test-output {
+.func-input,
+.func-output {
   color: #cccccc;
   padding: 0px 0px;
 }
@@ -292,43 +292,50 @@ td + td {
 /*  z-index: 0;*/
 /*}*/
 
-.test-text-container {
-  width: 70%;
-  border-right: 2px solid white;
-}
+/*.test-text-container {*/
+/*  width: 70%;*/
+/*  border-right: 2px solid white;*/
+/*}*/
 
-.test-text {
-  position: absolute;
-  font-size: 55px;
-  top: 13%;
-  left: 17%;
-  opacity: 0;
-  z-index: 1001;
-  transition: opacity .5s ease, left .5s ease;
-}
-.test-text.visible {
-  left: 13%;
-  opacity: 1;
-}
-.test-area-container {
+/*.test-text {*/
+/*  position: absolute;*/
+/*  font-size: 55px;*/
+/*  top: 13%;*/
+/*  left: 17%;*/
+/*  opacity: 0;*/
+/*  z-index: 1001;*/
+/*  transition: opacity .5s ease, left .5s ease;*/
+/*}*/
+/*.test-text.visible {*/
+/*  left: 13%;*/
+/*  opacity: 1;*/
+/*}*/
+.test-body {
   display: flex;
-  width: 100%;
   font-size: 40px;
+  padding: 50px 50px;
 }
 .test-box-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.test-input-container {
   position: relative;
+  padding-bottom: 50px;
   display: inline-block;
   width: auto;
-  top: 38%;
-  left: 15%;
+  /*top: 38%;*/
+  /*left: 15%;*/
 }
-.test-box-form {
+.test-input-form {
   display: inline-block;
 }
 .test-result-text {
-  position: absolute;
+  /*position: absolute;*/
   display: inline-block;
-  width: 500px;
+  width: 550px;
   left: 51%;
   top: 50%;
   padding: 0px 18px;
@@ -340,7 +347,10 @@ td + td {
 .result-text {
   font-family: Consolas;
 }
-
+.test-explain-container {
+  padding-right: 50px;
+  border-right: 1px solid white;
+}
 .test-container,
 .manual-container,
 .spec-container {
@@ -359,7 +369,8 @@ td + td {
   margin: 0px;
   border-bottom: solid white 2px;
 }
-.manual-text-container {
+.manual-text-container,
+.test-text-container {
   position: absolute;
   font-size: 55px;
   top: 13%;
@@ -368,7 +379,8 @@ td + td {
   z-index: 1001;
   transition: opacity .5s ease, left .5s ease;
 }
-.manual-text-container.visible {
+.manual-text-container.visible,
+.test-text-container.visible {
   left: 20%;
   opacity: 1;
 }
