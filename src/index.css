@@ -383,7 +383,7 @@ td + td {
   height: 5000px;
   margin-left: 20px;
   border-radius: 5px;
-  border: 2px solid #303030;
+  border-right: 2px solid #303030;
   background-color: #111111;
 }
 .side-nav {
@@ -476,6 +476,6 @@ a.side-nav-item.view {
   height: 5000px;
   margin-left: 20px;
   border-radius: 5px;
-  border: 2px solid #303030;
+  border-right: 2px solid #303030;
   background-color: #111111;
 }
