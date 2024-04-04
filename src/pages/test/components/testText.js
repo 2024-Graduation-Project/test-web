@@ -5,7 +5,7 @@ function TestText() {
 
     return(
         <div className='test-text-container'>
-            <p className={`test-text ${isVisible ? 'visible' : ''}`}>Try Now!</p>
+            <p className={`test-text ${isVisible ? 'visible' : ''}`}>Test Our API!</p>
         </div>
     )
 }

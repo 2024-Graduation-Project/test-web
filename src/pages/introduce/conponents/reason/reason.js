@@ -1,7 +1,8 @@
-import scrollVisible from "../../../../custom-hook/introduce/scrollVisible";
+import initialVisible from "../../../../custom-hook/introduce/initialVisible";
 
 function Reason({ reasonsText }) {
-    const isVisible = scrollVisible(200);
+    const isVisible = initialVisible();
+    const test = "API for\nUser";
 
     return (
         <div className='reason-container'>

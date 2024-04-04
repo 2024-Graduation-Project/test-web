@@ -9,7 +9,7 @@ function SpecificationContent() {
     return(
         <div className='spec-container'>
             <div className='spec-image-container'>
-                {/* 이곳에 이미지 선언 */}
+                <img className="main-image" src="./images/2.jpg"></img>
             </div>
             <div className={`manual-text-container ${isVisible ? 'visible' : ''}`}><p>Specification</p></div>
             <SpecBody />

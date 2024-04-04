@@ -7,7 +7,7 @@ function ManualContent() {
     return(
         <div className='manual-container'>
             <div className='manual-image-container'>
-                {/* 이곳에 이미지 선언 */}
+                <img className="main-image" src="./images/1.jpg"></img>
             </div>
             <div className={`manual-text-container ${isVisible ? 'visible' : ''}`}><p>How To Start?</p></div>
             <ManualBody />

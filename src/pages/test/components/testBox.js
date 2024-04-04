@@ -1,18 +1,10 @@
-import { useState } from "react";
-
-import TestInput from "./testInput";
-import TestResult from "./testResult";
+import TestArea from "./testArea";
 
 function TestBox() {
-    const [resultText, setResultText] = useState([]);
-    function handleResultMessage(result) {
-        setResultText(result);
-    }
 
     return(
         <div className='test-area-container'>
-            <TestInput setResultText={handleResultMessage}/>
-            <TestResult result={resultText}/>
+            <TestArea />
         </div>
     );
 }

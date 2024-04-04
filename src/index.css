@@ -127,7 +127,7 @@ td + td {
 .main-container {
   position: absolute;
   width: 100%;
-  height: 931px;
+  height: 700px;
   border-bottom: 2px solid white;
   top: 0;
   left: 0;
@@ -159,16 +159,17 @@ td + td {
 
 .reason-container {
   position: relative;
+  height: 149px;
   display: flex;
   justify-content: center;
   padding: 10px 10px 70px 10px;
-  /*border-bottom: 0.1px solid white;*/
 }
 .reason-text {
-  padding: 30px 120px 30px 120px;
+  padding: 30px 120px;
   font-size: 28px;
   font-weight: 600;
   line-height: 1.8;
+  text-align: center;
   opacity: 0;
   transition: opacity .5s ease, padding-top .5s ease;
 }
@@ -244,12 +245,13 @@ td + td {
   filter: blur(1px);
 }
 .text-animation-output {
-  width: 200px;
-  animation: typing 1.5s steps(20), blink .5s step-end infinite alternate;
+  width: 300px;
+  animation: typing 2s steps(5), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid white;
-}
+}.
+
 @keyframes typing {
   from { width: 0 }
 }
@@ -278,17 +280,17 @@ td + td {
 }
 
 
-.test-container {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 800px;
-  margin-top: 95px;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
+/*.test-container {*/
+/*  position: absolute;*/
+/*  !*display: flex;*!*/
+/*  !*justify-content: center;*!*/
+/*  width: 100%;*/
+/*  height: 800px;*/
+/*  margin-top: 95px;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  z-index: 0;*/
+/*}*/
 
 .test-text-container {
   width: 70%;
@@ -297,10 +299,11 @@ td + td {
 
 .test-text {
   position: absolute;
-  font-size: 60px;
-  top: 45%;
-  left: 10%;
+  font-size: 55px;
+  top: 13%;
+  left: 17%;
   opacity: 0;
+  z-index: 1001;
   transition: opacity .5s ease, left .5s ease;
 }
 .test-text.visible {
@@ -308,6 +311,7 @@ td + td {
   opacity: 1;
 }
 .test-area-container {
+  display: flex;
   width: 100%;
   font-size: 40px;
 }
@@ -337,6 +341,7 @@ td + td {
   font-family: Consolas;
 }
 
+.test-container,
 .manual-container,
 .spec-container {
   position: absolute;
@@ -346,11 +351,12 @@ td + td {
   left: 0;
   z-index: 0;
 }
+.test-image-container,
 .manual-image-container,
 .spec-image-container {
   position: relative;
   height: 500px;
-  margin: 0px 20px 0px 20px;
+  margin: 0px;
   border-bottom: solid white 2px;
 }
 .manual-text-container {

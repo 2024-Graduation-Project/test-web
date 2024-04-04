@@ -10,8 +10,7 @@ function IntroduceContent() {
 
     return(
         <div className="main-container">
-            {/*<img className="main-image" src="./images/main.jpg"></img>*/}
-            <div className="main-image"></div>
+            <img className="main-image" src="./images/4.jpg"></img>
             <div className={`image-text ${isVisible? 'visible' : ''}`}><p>{introduceTitle}</p></div>
             <div className='main-body-container'>
                 <Reason reasonsText={reasonsText}/>
