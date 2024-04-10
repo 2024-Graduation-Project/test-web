@@ -8,6 +8,20 @@ body {
   margin: 0%;
   height: 2000px;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 30px;
+  -webkit-transition: background-color 2s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999999;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
 
 p {
   white-space: pre-line;
@@ -60,6 +74,9 @@ td + td {
   border-left: 1px solid #505050;
 }
 
+li {
+  list-style-type: none;
+}
 .invisible {
   opacity: 0;
 }
@@ -162,7 +179,7 @@ td + td {
   height: 149px;
   display: flex;
   justify-content: center;
-  padding: 10px 10px 70px 10px;
+  padding: 55px 10px 22px 10px;
 }
 .reason-text {
   padding: 30px 120px;
@@ -188,13 +205,15 @@ td + td {
   transition-delay: 0.4s;
 }
 
-.function-container {
+.function-container,
+.chart-container {
   height: 1000px;
   margin: 0px 40px;
   padding: 10px;
   border-top: 1px solid white;
 }
-.function-title {
+.function-title,
+.chart-title {
   font-size: 40px;
 }
 .func-section1 {
@@ -250,7 +269,28 @@ td + td {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid white;
-}.
+}
+
+.chart {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.chart-Y {
+  width: 20px;
+  position:absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.chart-X {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+}
 
 @keyframes typing {
   from { width: 0 }

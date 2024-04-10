@@ -4,6 +4,7 @@ import useVisible from "../../custom-hook/introduce/initialVisible";
 import EtcContent from "./conponents/etc/etcContent";
 
 import { introduceTitle, reasonsText } from "./introduceText";
+import ChartContainer from "./conponents/chart/chartContainer";
 
 function IntroduceContent() {
     const isVisible = useVisible();
@@ -15,6 +16,7 @@ function IntroduceContent() {
             <div className='main-body-container'>
                 <Reason reasonsText={reasonsText}/>
                 <Function />
+                <ChartContainer />
                 <EtcContent />
             </div>
         </div>
