@@ -185,7 +185,7 @@ li {
 .reason-text {
   padding: 30px 120px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 540;
   line-height: 1.8;
   text-align: center;
   opacity: 0;
@@ -206,8 +206,7 @@ li {
   transition-delay: 0.4s;
 }
 
-.function-container,
-.chart-container {
+.function-container {
   height: 700px;
   padding: 200px 40px;
   text-align: center;
@@ -244,28 +243,31 @@ li {
   box-sizing: border-box;
   text-align: center;
 }
-.explain-text {
+.explain-text,
+.chart-explain {
   font-size: 30px;
   padding-top: 20px;
   opacity: 0;
   transition: padding-top 1s ease, opacity 1s ease;
 }
-.explain-text.visible {
+.explain-text.visible,
+.chart-explain.visible{
   padding-top: 0px;
   opacity: 1;
 }
 .sect1-test-container {
-  display: block;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
   color: #cccccc;
-  padding-top: 70px;
+  padding: 100px 350px;
 }
 .func-input-container,
 .func-output-container {
   display: block;
   width: 500px;
   font-family: "Nanum Gothic Coding";
-  padding-bottom: 30px  ;
+  padding-bottom: 50px  ;
   margin: 0 auto;
 }
 .func-input,
@@ -293,6 +295,11 @@ li {
   border-right: 1px solid white;
 }
 
+.chart-container {
+  height: 1500px;
+  padding: 200px 40px;
+  text-align: center;
+}
 .chart {
   padding-top: 100px;
 }
@@ -313,9 +320,6 @@ li {
 
 .chart-explain-container {
   padding-top: 170px;
-}
-.chart-explain {
-  font-size: 30px;
 }
 
 @keyframes typing {
