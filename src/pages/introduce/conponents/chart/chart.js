@@ -23,6 +23,11 @@ function Chart({ chartData }) {
                         ]
                     ]
                 }}
+                theme={{
+                    text: {
+                        fontSize: 14,
+                    }
+                }}
                 arcLinkLabelsSkipAngle={10}
                 arcLinkLabelsTextColor="#fff"
                 arcLinkLabelsOffset={-1}
