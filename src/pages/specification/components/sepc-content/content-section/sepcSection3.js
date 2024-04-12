@@ -12,7 +12,7 @@ function SepcSection3() {
             <div className='table-section'>
                 <table>
                     <thead>
-                        <tr><th>index</th><th>type</th><th>essential</th><th>etc</th></tr>
+                        <tr><th>index</th><th>type</th><th>required</th><th>etc</th></tr>
                     </thead>
                     <tbody>
                         <tr><td>0</td><td>String</td><td>Yes</td><td>first class</td></tr>

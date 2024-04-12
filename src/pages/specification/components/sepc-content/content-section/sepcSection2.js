@@ -22,7 +22,7 @@ function SepcSection2() {
             <div className='table-section'>
                 <table>
                     <thead>
-                        <tr><th>parameter</th><th>type</th><th>essential</th><th>etc</th></tr>
+                        <tr><th>parameter</th><th>type</th><th>required</th><th>etc</th></tr>
                     </thead>
                     <tbody>
                         <tr><td>Content-Type</td><td>String</td><td>Yes</td><td>application/json</td></tr>
@@ -33,7 +33,7 @@ function SepcSection2() {
             <div className='table-section'>
                 <table>
                     <thead>
-                        <tr><th>parameter</th><th>type</th><th>essential</th><th>etc</th></tr>
+                        <tr><th>parameter</th><th>type</th><th>required</th><th>etc</th></tr>
                     </thead>
                     <tbody>
                         <tr><td>text</td><td>String</td><td>Yes</td><td>message</td></tr>
