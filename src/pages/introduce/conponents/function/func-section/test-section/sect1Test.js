@@ -18,7 +18,7 @@ function Sect1Test() {
             <div className='func-output-container'>
                 <p className='title3'>Output</p>
                 <div className='func-output'>
-                    <div className={`${isVisible ? 'text-animation-output' : 'invisible'}`}>{ioText.outputTextLv0}</div>
+                    <div className={`${isVisible ? 'text-animation-output' : 'invisible'}`}>{ioText.outputTextLv0}<br/></div>
                     <div className={`${isVisible ? 'text-animation-output' : 'invisible'}`}>{ioText.outputTextLv1}</div>
                     <div className={`${isVisible ? 'text-animation-output' : 'invisible'}`}>{ioText.outputTextLv2}</div>
                     <div className={`${isVisible ? 'text-animation-output' : 'invisible'}`}>{ioText.outputTextLv3}</div>

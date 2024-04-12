@@ -3,7 +3,7 @@ import FuncSection1 from "./func-section/funcSection1";
 function Function() {
     return (
         <div className='function-container'>
-            <div className='function-title'>Key Functions</div>
+            <div className='function-title'><p>Key Functions</p></div>
             <FuncSection1 />
         </div>
     );

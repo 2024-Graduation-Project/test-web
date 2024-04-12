@@ -209,12 +209,23 @@ li {
 .chart-container {
   height: 1000px;
   margin: 0px 40px;
-  padding: 10px;
+  padding: 200px 40px;
+  text-align: center;
   border-top: 1px solid white;
 }
 .function-title,
 .chart-title {
   font-size: 40px;
+}
+.function-title::after {
+  content: "";
+  /*display: block;*/
+  position: absolute;
+  left: 47%;
+  bottom: -550px;
+  height: 2px;
+  width: 100px;
+  background: white;
 }
 .func-section1 {
   display: flex;
@@ -223,17 +234,26 @@ li {
 }
 .sect1-explain-container {
   display: flex;
-  width: 500px;
-  padding-right: 120px;
+  width: 1000px;
+  padding: 0px 100px;
   align-items: center;
-  border-right: 1px solid white;
+  /*border-right: 1px solid white;*/
+
 }
 .explain-text {
   font-size: 30px;
+  padding-top: 20px;
+  opacity: 0;
+  transition: padding-top 1s ease, opacity 1s ease;
+}
+.explain-text.visible {
+  padding-top: 0px;
+  opacity: 1;
 }
 .sect1-test-container {
   color: #cccccc;
-  padding-left: 200px;
+  padding-left: 120px;
+  text-align: left;
 }
 .func-input-container {
   font-family: "Nanum Gothic Coding";
@@ -256,26 +276,29 @@ li {
 }
 .text-input-lv0,
 .text-input-lv1{
-
+  margin-bottom: 5px
 }
 .text-input-lv2,
 .text-input-lv3,
 .text-input-lv4 {
   filter: blur(1px);
+  margin-bottom: 5px
 }
 .text-animation-output {
   width: 300px;
-  animation: typing 2s steps(5), blink .5s step-end infinite alternate;
+  margin-bottom: 5px;
+  animation: typing 2s steps(50), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid white;
 }
 
 .chart {
-  padding-left: 10px;
-  margin-bottom: 20px;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
+
+  /*padding-left: 10px;*/
+  /*margin-bottom: 20px;*/
+  /*border-left: 1px solid white;*/
+  /*border-bottom: 1px solid white;*/
 }
 .chart-Y {
   width: 20px;
