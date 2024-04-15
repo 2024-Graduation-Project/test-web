@@ -4,8 +4,7 @@ const section1Links = [
     { content: "Using Axios", scroll: { start: 1800, end: 2930 }}
 ];
 const section2Links = [
-    { content: "Other Uses", scroll: { start: 2930, end: 3800 }},
-    { content: "Minecraft", scroll: { start: 3800, end: 4900 }}
+    { content: "Minecraft", scroll: { start: 2930, end: 3800 }},
 ];
 
 export default {

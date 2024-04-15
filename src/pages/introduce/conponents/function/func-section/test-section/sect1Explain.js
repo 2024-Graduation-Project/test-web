@@ -1,7 +1,7 @@
 import scrollVisible from "../../../../../../custom-hook/introduce/scrollVisible";
 
 function Sect1Explain() {
-    const isVisible = scrollVisible(900 );
+    const isVisible = scrollVisible(700);
 
     return (
         <div className='sect1-explain-container'>
