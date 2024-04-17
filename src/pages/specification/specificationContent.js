@@ -11,7 +11,7 @@ function SpecificationContent() {
             <div className='spec-image-container'>
                 <img className="main-image" src="./images/2.jpg"></img>
             </div>
-            <div className={`manual-text-container ${isVisible ? 'visible' : ''}`}><p>Specification</p></div>
+            <div className={`manual-text-container ${isVisible ? 'visible' : ''}`}><p>API Specification</p></div>
             <SpecBody />
         </div>
     )

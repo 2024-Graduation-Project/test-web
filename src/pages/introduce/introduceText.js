@@ -1,18 +1,18 @@
-export const introduceTitle = "Introducing Our API";
+export const introduceTitle = "Introducing For SwearMonitor";
 export const reasonsText = [
     {
-        content: `API for 
-        personal servers`,
+        content: `API FOR 
+        PERSONAL SERVERS`,
         visible: 1
     },
     {
-        content: `Preventing
-        swear`,
+        content: `PREVENTING
+        SWEAR`,
         visible: 2
     },
     {
-        content: `Reduce
-        operational costs`,
+        content: `REDUCE
+        OPERATIONAL COSTS`,
         visible: 3
     },
 ];

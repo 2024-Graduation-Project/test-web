@@ -21,11 +21,12 @@ app.post("/torch", async (req, res) => {
 
         const probToNum = response.data.slice(0, 4).map(Number);
         const resultLevel = probToNum.indexOf(Math.max(...probToNum));
+        const filteredText = response.data[4];
 
-        // 해당 문장의 레벨이 0이 아니면 DB에 저장  
-        if(!resultLevel) {
-            /* requestText를 db에 넣는 코드 */
-        }
+        console.log(`Request Message: ${text}`);
+        console.log(`Response Message: [${resultLevel}lv] ${filteredText}`);
+
+        /* DB에 해당 문장을 넣는 코드 */
 
         res.json(response.data);
     } catch (error) {

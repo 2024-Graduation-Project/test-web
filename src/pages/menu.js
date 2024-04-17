@@ -8,7 +8,7 @@ function Menu({ selectContent }) {
     return (
         <div className='main-header'>
             <div className='main-logo'>
-                <p onClick={() => selectContent(0)}>Swear Monitor</p>
+                <p className='logo-text' onClick={() => selectContent(0)}>SwearMonitor</p>
             </div>
             <div className='page-select'>
                 { 
