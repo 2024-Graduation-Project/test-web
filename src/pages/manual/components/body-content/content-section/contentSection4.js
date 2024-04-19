@@ -1,16 +1,8 @@
+import Highlight from "react-highlight";
+import sect4Text from "../contentSection4Text";
+import Markdown from "../../../../../Markdown";
+
 function ContentSection4() {
-    const exampleURL = `const torchServeURL = "http://localhost:8080/predictions/KcELECTRA;
-const requestMessage = "안녕하세요";`;
-    const axiosRequestCode = `axios.post(torchServeURL, requestMessage)
-            .then((response) => { console.log("전송 성공:", response.data); })
-            .catch((error) => { console.log("전송 실패:", error); })`;
-    const responseMessage = `[
-    "0.9997372031211853",
-    "4.3749314500018954e-05",
-    "9.505049092695117e-05",
-    "0.0001239777193404734",
-    "\\uc548\\ub155\\ud558\\uc138\\uc694"
-]`;
 
     return (
         <div className='content-section'>
@@ -21,28 +13,32 @@ const requestMessage = "안녕하세요";`;
                 마인크래프트는 Java언어를 기반으로 만들어졌기 때문에 아래와 같이 활용할 수 있다.
             </p>
             <p className='text'>
-                마인크래프트에서 API를 호출하는 코드 :
+                Gradle Setting :
             </p>
             <div className='long-code-section'>
-                <pre><code className='code-font'>{ exampleURL }</code></pre>
+                {/*<pre><code className='code-font'>{ sect4Text.gradleSettingCode }</code></pre>*/}
+                <Markdown text={sect4Text.gradleSettingCode}/>
             </div>
             <p className='text'>
-                Response Message 로부터 해당 문장의 레벨과 필터링된 문장을 추출하는 코드:
+                ChatEventListener 클래스 :
             </p>
             <div className='long-code-section'>
-                <pre><code className='code-font'>{ axiosRequestCode }</code></pre>
+                {/*<pre><code className='code-font'>{ sect4Text.chatEventListenerCode }</code></pre>*/}
+                <Markdown text={sect4Text.chatEventListenerCode}/>
             </div>
             <p className='text'>
-                필터링된 문장을 게임 서버에 전송하는 코드 :
+                PredictData 클래스 :
             </p>
             <div className='long-code-section'>
-                <pre><code className='code-font'>{ responseMessage }</code></pre>
+                {/*<pre><code className='code-font'>{ sect4Text.predictDataClass }</code></pre>*/}
+                <Markdown text={sect4Text.predictDataClass}/>
             </div>
             <p className='text'>
-                비속어의 레벨에 따라 채팅을 한 유저에게 가할 패널티를 설정하는 코드 :
+                PluginMain 클래스 :
             </p>
             <div className='long-code-section'>
-                <pre><code className='code-font'>{ responseMessage }</code></pre>
+                {/*<pre><code className='code-font'>{ sect4Text.pluginMainClass }</code></pre>*/}
+                <Markdown text={sect4Text.pluginMainClass}/>
             </div>
         </div>
     );

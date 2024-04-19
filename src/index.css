@@ -215,7 +215,8 @@ li {
   text-align: center;
 }
 .function-title,
-.chart-title {
+.chart-title,
+.cri-title {
   font-size: 50px;
   font-weight: lighter;
 }
@@ -236,6 +237,18 @@ li {
   height: 2px;
   width: 100px;
   background: white;
+}
+.cri-title::after {
+  content: "";
+  position: absolute;
+  left: 47%;
+  bottom: -3035px;
+  height: 2px;
+  width: 100px;
+  background: white;
+}
+.default-cri-table {
+  margin-bottom: 200px;
 }
 .func-section1 {
   text-align: center;
@@ -260,7 +273,8 @@ li {
   transition: padding-top 1s ease, opacity 1s ease;
 }
 .explain-text.visible,
-.chart-explain.visible{
+.chart-explain.visible,
+.cri-explain.visible {
   padding-top: 0px;
   opacity: 1;
 }
@@ -305,7 +319,7 @@ li {
 }
 
 .chart-container {
-  height: 1500px;
+  height: 1000px;
   padding: 200px 40px;
   text-align: center;
 }
@@ -340,6 +354,40 @@ li {
   50% {
     border-color: transparent;
   }
+}
+
+.cri-container {
+  height: 1500px;
+  padding: 200px 40px;
+  text-align: center;
+}
+.cri-explain-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 170px;
+}
+.cri-explain {
+  width: 800px;
+  font-size: 25px;
+  padding-top: 20px;
+  opacity: 0;
+  transition: padding-top 1s ease, opacity 1s ease;
+}
+.cri-table-container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+}
+.cri-table-arrow {
+  position: absolute;
+  bottom: -3730px;
+  left: 49%;
+  opacity: 0;
+  transition: opacity 1s ease, bottom 1s ease;
+}
+.cri-table-arrow.visible {
+  opacity: 1;
+  bottom: -3746px;
 }
 
 .etc-container {
@@ -399,8 +447,8 @@ li {
 .test-box-container {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
-  padding-bottom: 50px;
+  padding: 50px 100px 50px 0px;
+  border-right: 1px solid white;
 }
 .test-input-container {
   position: relative;
@@ -429,8 +477,10 @@ li {
   font-family: Consolas;
 }
 .test-explain-container {
-  padding-right: 50px;
-  border-right: 1px solid white;
+  padding: 50px 0px 50px 50px;
+}
+.test-explain {
+  font-size: 22px;
 }
 .test-container,
 .manual-container,
@@ -518,6 +568,7 @@ a.side-nav-item.view {
 }
 
 .content-container {
+  height: 5000px;
   flex: 1 1 auto;
   font-family: sans-serif;
   padding: 25px 475px 25px 175px;
@@ -553,7 +604,7 @@ a.side-nav-item.view {
 .long-code-section {
   min-height: 20px;
   margin-bottom: 50px;
-  padding: 10px 25px;
+  /*padding: 10px 25px;*/
   background-color: #202020;
   border-radius: 8px;
 }

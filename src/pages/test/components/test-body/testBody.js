@@ -5,8 +5,8 @@ function TestBody() {
 
     return(
         <div className='test-body'>
-            <TestExplainContainer />
             <TestBoxContainer />
+            <TestExplainContainer />
         </div>
     );
 }

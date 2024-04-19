@@ -6,9 +6,9 @@ import ContentSection4 from "./content-section/contentSection4";
 function BodyContent() {
     return (
         <div className='content-container'>
-            <ContentSection1 /><hr/>
+            {/*<ContentSection1 /><hr/>*/}
             <ContentSection2 /><hr/>
-            <ContentSection3 /><hr/>
+            {/*<ContentSection3 /><hr/>*/}
             <ContentSection4 /><hr/>
         </div>
     );

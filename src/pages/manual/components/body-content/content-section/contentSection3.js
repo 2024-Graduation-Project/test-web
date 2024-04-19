@@ -9,7 +9,7 @@ function ContentSection3() {
                 ex) TorchServe URL과 Request Message :
             </p>
             <div className='long-code-section'>
-                <pre><code className='code-font'>{sect3Text.exampleURL}</code></pre>
+                <pre><code className='code-font language-javascript'>{sect3Text.exampleURL}</code></pre>
             </div>
             <p className='text'>
                 axios로 POST 요청을 보내는 코드 :

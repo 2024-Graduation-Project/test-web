@@ -5,6 +5,7 @@ import EtcContent from "./conponents/etc/etcContent";
 
 import { introduceTitle, reasonsText } from "./introduceText";
 import ChartContainer from "./conponents/chart/chartContainer";
+import CriteriaContainer from "./conponents/criteria/criteriaContainer";
 
 function IntroduceContent() {
     const isVisible = useVisible();
@@ -17,6 +18,7 @@ function IntroduceContent() {
                 <Reason reasonsText={reasonsText}/>
                 <Function />
                 <ChartContainer />
+                <CriteriaContainer />
                 <EtcContent />
             </div>
         </div>
